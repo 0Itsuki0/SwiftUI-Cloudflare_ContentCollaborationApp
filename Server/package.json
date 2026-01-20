@@ -1,0 +1,27 @@
+{
+    "name": "twilio_server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "commonjs",
+    "scripts": {
+        "build": "tsc && chmod 755 build/*",
+        "dev": "npm run build && node build/server.js"
+    },
+    "files": [
+        "build"
+    ],
+    "keywords": [],
+    "author": "itsuki",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^17.2.3",
+        "express": "^5.2.1",
+        "twilio": "^5.11.2"
+    },
+    "devDependencies": {
+        "@types/express": "^5.0.6",
+        "@types/node": "^25.0.9",
+        "typescript": "^5.9.3"
+    }
+}
