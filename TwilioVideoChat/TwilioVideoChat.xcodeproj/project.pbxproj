@@ -6,13 +6,32 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		984B9FD52F1DA58A009D27C3 /* TwilioVideo in Frameworks */ = {isa = PBXBuildFile; productRef = 984B9FD42F1DA58A009D27C3 /* TwilioVideo */; };
+		984BA10F2F1F4858009D27C3 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 984BA10E2F1F4858009D27C3 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		984B9FC52F1DA53B009D27C3 /* TwilioVideoChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwilioVideoChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		984BA10E2F1F4858009D27C3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		984BA0632F1DB8C6009D27C3 /* Exceptions for "TwilioVideoChat" folder in "TwilioVideoChat" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 984B9FC42F1DA53B009D27C3 /* TwilioVideoChat */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		984B9FC72F1DA53B009D27C3 /* TwilioVideoChat */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				984BA0632F1DB8C6009D27C3 /* Exceptions for "TwilioVideoChat" folder in "TwilioVideoChat" target */,
+			);
 			path = TwilioVideoChat;
 			sourceTree = "<group>";
 		};
@@ -23,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				984B9FD52F1DA58A009D27C3 /* TwilioVideo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +52,7 @@
 		984B9FBC2F1DA53B009D27C3 = {
 			isa = PBXGroup;
 			children = (
+				984BA10E2F1F4858009D27C3 /* .gitignore */,
 				984B9FC72F1DA53B009D27C3 /* TwilioVideoChat */,
 				984B9FC62F1DA53B009D27C3 /* Products */,
 			);
@@ -65,6 +86,7 @@
 			);
 			name = TwilioVideoChat;
 			packageProductDependencies = (
+				984B9FD42F1DA58A009D27C3 /* TwilioVideo */,
 			);
 			productName = TwilioVideoChat;
 			productReference = 984B9FC52F1DA53B009D27C3 /* TwilioVideoChat.app */;
@@ -94,6 +116,9 @@
 			);
 			mainGroup = 984B9FBC2F1DA53B009D27C3;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				984B9FD32F1DA58A009D27C3 /* XCRemoteSwiftPackageReference "twilio-video-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 984B9FC62F1DA53B009D27C3 /* Products */;
 			projectDirPath = "";
@@ -109,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				984BA10F2F1F4858009D27C3 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,11 +282,15 @@
 				DEVELOPMENT_TEAM = NLTYK5T6U3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TwilioVideoChat/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera Please!";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Mic Please!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -273,7 +303,7 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -288,11 +318,15 @@
 				DEVELOPMENT_TEAM = NLTYK5T6U3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TwilioVideoChat/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera Please!";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Mic Please!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +339,7 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -332,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		984B9FD32F1DA58A009D27C3 /* XCRemoteSwiftPackageReference "twilio-video-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twilio/twilio-video-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		984B9FD42F1DA58A009D27C3 /* TwilioVideo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 984B9FD32F1DA58A009D27C3 /* XCRemoteSwiftPackageReference "twilio-video-ios" */;
+			productName = TwilioVideo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 984B9FBD2F1DA53B009D27C3 /* Project object */;
 }
