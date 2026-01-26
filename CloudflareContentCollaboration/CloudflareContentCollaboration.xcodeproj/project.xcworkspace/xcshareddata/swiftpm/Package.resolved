@@ -1,0 +1,15 @@
+{
+  "originHash" : "2c11fc26c442ae6169390902af61c0d59ccae5d534f89976162abad26cb13934",
+  "pins" : [
+    {
+      "identity" : "yswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/y-crdt/yswift",
+      "state" : {
+        "revision" : "8c25f088fcccfc3c428c37ac9206a297d031f1c5",
+        "version" : "0.2.1"
+      }
+    }
+  ],
+  "version" : 3
+}

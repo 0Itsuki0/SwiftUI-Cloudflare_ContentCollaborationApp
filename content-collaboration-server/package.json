@@ -1,0 +1,21 @@
+{
+	"name": "content-collaboration-server",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"cf-typegen": "wrangler types",
+		"fmt": "prettier --write src/**/*"
+	},
+	"devDependencies": {
+		"typescript": "^5.5.2",
+		"wrangler": "^4.60.0"
+	},
+	"dependencies": {
+		"prettier": "^3.8.1",
+		"yjs": "^13.6.29",
+		"zod": "^4.3.6"
+	}
+}

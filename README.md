@@ -1,36 +1,39 @@
-# SwiftUI: Twilio Video Chat
+# SwiftUI/Cloudflare: Content Collaboration App
 
-A two-way, multi-person video call app + text-based chats with Twilio Video.
+A real-time, multi-user, content collaboration app with Cloudflare durable
+object (websocket hibernation API), Y-Swift, and SwiftUI.
 
-Blog: [SwiftUI: Video Calls With Twilio]()
+Blog:
+[SwiftUI: Realtime, Multi-User Content Collaboration With CloudFlare +YJS-Swift]()
 
 This repository contain two part:
 
-- **Backend**: A simple express server expose a single endpoint for obtaining
-  access token.
-- **SwiftUI/iOS App**: the user create / join a room and share their media.
+- **Backend**: A websocket server with cloudflare durable object (hibernation
+  API)
 
-![](./Demo.gif)
+- **SwiftUI/iOS App**: the user create / open a document and collaborate with
+  other collaborators in real time
+
+![](./demo.gif)
 
 ## Run the App
 
-1. Get API keys and Account SID from Twilio
-2. Set up keys in `Server/.env`
+1. Start the backend server
    ```bash
-   TWILIO_ACCOUNT_SID=ACxxxxxxxxxx
-   TWILIO_API_KEY=SKxxxxxxxxxx
-   TWILIO_API_SECRET=xxxxxxxxxx
-   ```
-
-3. Start the backend server
-   ```bash
-   cd Server
+   cd content-collaboration-server
    npm install
    npm run dev
    ```
 
-4. Update the App side `ServerConfig.url` to use the IP address of the wifi
-   - make sure not to use localhost when running on real device
+2. Run the app on multiple devices, enter the same document name and start
+   collaborating.
 
-5. Run the app in multiple devices
-   - When running on simulator, camera will not work.
+## Deploy the server
+
+The websocket endpoint can be deployed to cloudflare with the following
+commands.
+
+```bash
+npx wrangler login
+npm run deploy
+```

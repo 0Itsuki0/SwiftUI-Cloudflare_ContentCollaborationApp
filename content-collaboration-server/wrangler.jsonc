@@ -1,0 +1,29 @@
+/**
+* For more details on how to configure Wrangler, refer to:
+* https://developers.cloudflare.com/workers/wrangler/configuration/
+*/
+{
+    "$schema": "node_modules/wrangler/config-schema.json",
+    "name": "content-collaboration-server",
+    "main": "src/index.ts",
+    "compatibility_date": "2025-09-27",
+    "durable_objects": {
+        "bindings": [
+        {
+            "name": "DOCUMENT_COLLABORATION_SERVER",
+            "class_name": "CollaborationDocument"
+        }
+        ]
+    },
+    "migrations": [
+        {
+        "tag": "v1",
+        "new_sqlite_classes": [
+            "CollaborationDocument"
+        ]
+        }
+    ],
+    "observability": {
+        "enabled": true
+    }
+}
