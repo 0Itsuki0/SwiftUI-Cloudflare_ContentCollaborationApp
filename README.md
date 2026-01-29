@@ -4,7 +4,7 @@ A real-time, multi-user, content collaboration app with Cloudflare durable
 object (websocket hibernation API), Y-Swift, and SwiftUI.
 
 Blog:
-[SwiftUI: Realtime, Multi-User Content Collaboration With CloudFlare +YJS-Swift]()
+[SwiftUI: Realtime, Multi-User Content Collaboration With CloudFlare +YJS-Swift](https://medium.com/@itsuki.enjoy/swiftui-realtime-multi-user-content-collaboration-with-cloudflare-yjs-swift-94a155fab5a7)
 
 This repository contain two part:
 
